@@ -57,9 +57,9 @@
             var timeText = document.querySelector("#timeElement");
             timeText.innerHTML = theTime
 
-            function updateTime() {
-                var theTime = new Date().toLocaleString
-            }
+            setInterval(function () {
+  document.querySelector("#timeElement").innerHTML = new Date().toLocaleString();
+}, 1000);
         </script>
 
 </body>
