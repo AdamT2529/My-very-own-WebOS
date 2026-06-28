@@ -46,11 +46,22 @@
             <p style="color: orangered">
                 Lightning McQueen
             </p>
+            <p id="timeElement"
+            style="font-weight: 700;">
+            Time
+        </p>
 
         </div>
+        <script>
+            var theTime = new Date().toLocaleString();
+            var timeText = document.querySelector("#timeElement");
+            timeText.innerHTML = theTime
 
-        
-  
+            function updateTime() {
+                var theTime = new Date().toLocaleString
+            }
+        </script>
+
 </body>
 
 </html>
