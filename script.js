@@ -19,11 +19,11 @@ function openWindow(element) {
   element.style.display = "flex"
 }
 welcomeScreenClose.addEventListener("click", function() {
-  closeWindow(windowScreen);
+  closeWindow(welcomeScreen);
 });
 
 welcomeScreenOpen.addEventListener("click", function() {
-  openWindow(windowScreen);
+  openWindow(welcomeScreen);
 });
   // Step 3: Check if there is a special header element associated with the draggable element.
   if (document.getElementById(element.id + "header")) {
