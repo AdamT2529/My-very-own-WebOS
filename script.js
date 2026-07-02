@@ -1,7 +1,7 @@
 // Make the DIV element draggable:
 dragElement(document.getElementById("window"));
 dragElement(document.querySelector("#lightningwindow"))
-
+dragElement(document.querySelector("#materwindow"))
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
   // Step 2: Set up variables to keep track of the element's position.
@@ -16,6 +16,9 @@ function dragElement(element) {
   var lightningIcon = document.querySelector("#lightningIcon")
   var lightningWindow = document.querySelector("#lightningwindow");
   var lightningClose = document.querySelector("#lightningclose")
+  var materIcon = document.querySelector("#materIcon")
+  var materWindow = document.querySelector("#materwindow");
+  var materClose = document.querySelector("#materclose")
 
   function closeWindow(element) {
     element.style.display = "none"
@@ -24,7 +27,9 @@ function dragElement(element) {
 lightningIcon.addEventListener("click", function () {
     openWindow(lightningWindow);
 });
-
+materIcon.addEventListener("click", function () {
+  openWindow(materWindow)
+});
 
 function openWindow(element) {
   element.style.display = "block"
@@ -38,6 +43,9 @@ welcomeScreenOpen.addEventListener("click", function() {
 });
 lightningClose.addEventListener("click", function () {
   closeWindow(lightningWindow)
+});
+materClose.addEventListener("click", function () {
+  closeWindow(materWindow)
 });
 function selectIcon(element) {
   element.classList.add("selected");
