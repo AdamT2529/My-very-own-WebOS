@@ -15,6 +15,7 @@ function dragElement(element) {
   var selectedIcon = undefined
   var lightningIcon = document.querySelector("#lightningIcon")
   var lightningWindow = document.querySelector("#lightningwindow");
+  var lightningClose = document.querySelector("#lightningclose")
 
   function closeWindow(element) {
     element.style.display = "none"
@@ -34,6 +35,9 @@ welcomeScreenClose.addEventListener("click", function() {
 
 welcomeScreenOpen.addEventListener("click", function() {
   openWindow(welcomeScreen);
+});
+lightningClose.addEventListener("click", function () {
+  closeWindow(lightningWindow)
 });
 function selectIcon(element) {
   element.classList.add("selected");
