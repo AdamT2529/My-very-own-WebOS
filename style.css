@@ -4,3 +4,22 @@
 	background-color: red
 
 }
+.desktopApps {
+	padding: 64px; 
+}
+.desktopApps img {
+	width: 128px; 
+	height: 64px; 
+	border-radius: 10000px;
+}
+.desktopApps p {
+	margin: 0px; 
+	color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+	width: 180px; 
+	height: 64px; 
+	border-radius: 1000px;
+	filter: drop-shadow(0 0 8px black); 
+    width: fit-content"
+}
