@@ -16,7 +16,7 @@ function dragElement(element) {
     element.style.display = "none"
 }
 function openWindow(element) {
-  element.style.display = "flex"
+  element.style.display = "block"
 }
 welcomeScreenClose.addEventListener("click", function() {
   closeWindow(welcomeScreen);
