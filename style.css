@@ -1,4 +1,6 @@
 .closebutton {
-	width: 16px
+	width: 16px;
+	height: 16px;
+	background-color: red
 
 }

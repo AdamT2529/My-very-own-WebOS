@@ -27,10 +27,8 @@
         font-weight: 700;
         ">
 		Welcome
-        <p style="cursor: pointer" id="windowclose">Close</p>
+        <div class="closebutton" id="windowclose">Close</div>
 	</p>
-    <div class="closebutton" id="windowheader">
-    </div>
         <h1 style="margin: 4px;">CarsOS</h1>
         <h1>Welcome to my OS</h1>
         <h2>Introduction</h2>
@@ -76,9 +74,10 @@
   document.querySelector("#timeElement").innerHTML = new Date().toLocaleString();
 }, 1000);
         </script>
+        <head>
         <script src="script.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css" />
-
+</head>
 </body>
 
 </html>
