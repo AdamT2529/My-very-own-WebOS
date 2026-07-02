@@ -11,6 +11,7 @@ function dragElement(element) {
   var welcomeScreen = document.querySelector("#window")
   var welcomeScreenClose = document.querySelector("#windowclose")
   var welcomeScreenOpen = document.querySelector("#windowopen")
+  var selectedIcon = undefined
 
   function closeWindow(element) {
     element.style.display = "none"
