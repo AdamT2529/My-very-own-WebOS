@@ -19,6 +19,7 @@ function dragElement(element) {
   var materIcon = document.querySelector("#materIcon")
   var materWindow = document.querySelector("#materwindow");
   var materClose = document.querySelector("#materclose")
+  var restartbutton = document.querySelector("#restartbutton")
 
   function closeWindow(element) {
     element.style.display = "none"
@@ -46,6 +47,9 @@ lightningClose.addEventListener("click", function () {
 });
 materClose.addEventListener("click", function () {
   closeWindow(materWindow)
+});
+restartbutton.addEventListener("click", function () {
+  location.reload();
 });
 function selectIcon(element) {
   element.classList.add("selected");
