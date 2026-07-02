@@ -1,5 +1,6 @@
 // Make the DIV element draggable:
 dragElement(document.getElementById("window"));
+dragElement(document.querySelector("#lightningwindow"))
 
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
@@ -12,10 +13,18 @@ function dragElement(element) {
   var welcomeScreenClose = document.querySelector("#windowclose")
   var welcomeScreenOpen = document.querySelector("#windowopen")
   var selectedIcon = undefined
+  var lightningIcon = document.querySelector("#lightningIcon")
+  var lightningWindow = document.querySelector("#lightningwindow");
 
   function closeWindow(element) {
     element.style.display = "none"
 }
+
+lightningIcon.addEventListener("click", function () {
+    openWindow(lightningWindow);
+});
+
+
 function openWindow(element) {
   element.style.display = "block"
 }
@@ -42,6 +51,7 @@ function handleIconTap(element) {
     selectIcon(element)
   }
 }
+
   // Step 3: Check if there is a special header element associated with the draggable element.
   if (document.getElementById(element.id + "header")) {
     // Step 4: If present, assign the `dragMouseDown` function to the header's `onmousedown` event.
