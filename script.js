@@ -108,7 +108,7 @@ function handleIconTap(element) {
 window.addEventListener("load", () => {
   setTimeout(() => {
   document.getElementById("loading_screen").style.display = "none";
-  }, ); // Dont forget to change it back to 3000
+  }, 3000); // Dont forget to change it back to 3000
 });
 
   // Step 3: Check if there is a special header element associated with the draggable element.
