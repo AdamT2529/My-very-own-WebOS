@@ -3,6 +3,18 @@ function setImageAnother() {
     document.body.style.backgroundImage = "url('./images/another_lightning.jpg')";
     document.body.style.backgroundPosition = "center";
   }
+function setImageCool() {
+  document.body.style.backgroundImage = "url('./images/cool_lightning.jpg')";
+    document.body.style.backgroundPosition = "center";
+}
+function setImageMcqueen() {
+  document.body.style.backgroundImage = "url('./images/mcqueen.jpg')";
+    document.body.style.backgroundPosition = "center";
+}
+function setImageDefault() {
+  document.body.style.backgroundImage = "url('./images/Cars.jpg')";
+    document.body.style.backgroundPosition = "center";
+}
 dragElement(document.getElementById("window"));
 dragElement(document.querySelector("#lightningwindow"))
 dragElement(document.querySelector("#materwindow"))
