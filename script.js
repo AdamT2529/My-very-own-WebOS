@@ -68,6 +68,7 @@ function handleIconTap(element) {
   }
 }
 
+
   // Step 3: Check if there is a special header element associated with the draggable element.
   if (document.getElementById(element.id + "header")) {
     // Step 4: If present, assign the `dragMouseDown` function to the header's `onmousedown` event.
