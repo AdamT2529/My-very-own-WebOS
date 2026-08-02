@@ -1,4 +1,8 @@
 // Make the DIV element draggable:
+function setImageAnother() {
+    document.body.style.backgroundImage = "url('./images/another_lightning.jpg')";
+    document.body.style.backgroundPosition = "center";
+  }
 dragElement(document.getElementById("window"));
 dragElement(document.querySelector("#lightningwindow"))
 dragElement(document.querySelector("#materwindow"))
@@ -24,6 +28,7 @@ function dragElement(element) {
   var desktopWindow = document.querySelector("#desktopwindow");
   var desktopClose = document.querySelector("#desktopclose")
   var restartbutton = document.querySelector("#restartbutton")
+
 
   function closeWindow(element) {
     element.style.display = "none"
