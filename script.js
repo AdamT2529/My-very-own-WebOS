@@ -2,6 +2,7 @@
 dragElement(document.getElementById("window"));
 dragElement(document.querySelector("#lightningwindow"))
 dragElement(document.querySelector("#materwindow"))
+dragElement(document.querySelector("#desktopwindow"))
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
   // Step 2: Set up variables to keep track of the element's position.
@@ -19,6 +20,9 @@ function dragElement(element) {
   var materIcon = document.querySelector("#materIcon")
   var materWindow = document.querySelector("#materwindow");
   var materClose = document.querySelector("#materclose")
+  var desktopIcon = document.querySelector("#desktopIcon")
+  var desktopWindow = document.querySelector("#desktopwindow");
+  var desktopClose = document.querySelector("#desktopclose")
   var restartbutton = document.querySelector("#restartbutton")
 
   function closeWindow(element) {
@@ -30,6 +34,9 @@ lightningIcon.addEventListener("click", function () {
 });
 materIcon.addEventListener("click", function () {
   openWindow(materWindow)
+});
+desktopIcon.addEventListener("click", function () {
+  openWindow(desktopWindow)
 });
 
 function openWindow(element) {
@@ -48,6 +55,10 @@ lightningClose.addEventListener("click", function () {
 materClose.addEventListener("click", function () {
   closeWindow(materWindow)
 });
+desktopClose.addEventListener("click", function () {
+  closeWindow(desktopWindow)
+});
+
 restartbutton.addEventListener("click", function () {
   location.reload();
 });
